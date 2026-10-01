@@ -1,8 +1,3 @@
-// server.js
-// Basic HTTP server using the built-in http module
-// Run with: node server.js
-// Visit: http://localhost:3000/ , /about , /contact
-
 const http = require('http');
 const logger = require('./modules/logger');
 
@@ -21,17 +16,17 @@ const server = http.createServer((req, res) => {
 
     case '/about':
       res.statusCode = 200;
-      res.end('About Page');
+      res.end('About');
       break;
 
     case '/contact':
       res.statusCode = 200;
-      res.end('Contact Page');
+      res.end('Contact');
       break;
 
     default:
       res.statusCode = 404;
-      res.end('404 Error: Page Not Found');
+      res.end('Error 404: Page Not Found');
       break;
   }
 });
