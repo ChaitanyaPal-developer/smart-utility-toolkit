@@ -1,10 +1,6 @@
-// calculator.js
-// CLI-based calculator using process.argv
-// Example: node calculator.js add 10 5
-
 const logger = require('./modules/logger');
 
-// process.argv[0] = node path, [1] = file path, [2] = operation, [3] & [4] = numbers
+
 const operation = process.argv[2];
 const num1 = parseFloat(process.argv[3]);
 const num2 = parseFloat(process.argv[4]);
