@@ -22,7 +22,7 @@ fs.writeFile(filePath, 'Hello Node.js', (err) => {
       logger.error(`Error reading file: ${err.message}`);
       return;
     }
-    console.log('Reading File');
+    console.log('File Reading');
     console.log(data);
 
     // 3. UPDATE FILE (append content)
